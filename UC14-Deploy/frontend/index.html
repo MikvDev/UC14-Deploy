@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <title>Login</title>
 </head>
-<body  class="bg-cover h-screen w-screen"  style="background-image: url('./src/assets/low-angle-view-skyscrapers.jpg') " >
+<body  class="bg-cover h-screen w-screen"  style="background-image: url('./src/assets/rm218batch4-ning-24.jpg') " >
     <main class=" h-screen w-screen  flex justify-center items-center">
 
         
-        <div class="flex flex-col  justify-between   rounded-3xl p-10 h-fit w-[400px] border border-white/20 text-white  bg-black/20 backdrop-blur-md shadow-lg gap-10 "  >
+        <div class="flex flex-col  justify-between   rounded-3xl p-10 h-fit w-[400px] border border-white/20 text-white  bg-black/30 backdrop-blur-md shadow-lg gap-10 "  >
             <div class="text-center flex flex-col gap-3"> 
                 <a href="/pages/register.html">Não tem uma conta ainda? Se cadastre</a>
                 <h1 class="text-2xl font-medium">
@@ -25,12 +25,16 @@
                 <form class="flex flex-col justify-center items-center text-center gap-3">
                     <div class="flex justify-center items-center p-3 border h-[40px] gap-3 w-full rounded-[20px]">
                         <i data-lucide="mail" class="w-5 h-5"></i>
-                        <input type="email" id="email" placeholder="Email" class="w-full">
+                        <input type="email" id="email" autocomplete="email"  required   placeholder="Email" class="w-full">
 
                     </div>
                     <div class="flex justify-center items-center p-3 border h-[40px] gap-3 w-full rounded-[20px]">
                          <i data-lucide="lock" class="w-5 h-5 text-gray"></i>
-                        <input type="email" id="email" placeholder="Password" class="w-full">
+                        <input type="password" id="email" required   placeholder="Password" class="w-full">
+                        <i data-lucide="eye"></i>
+                    </div>
+                    <a href="">Forgot your password?</a>
+                    <div class="error-message hidden text-red-300 ">
 
                     </div>
                    <button class="bg-white text-black w-full h-[50px] gap-2 rounded-[20px] opacity-100 flex justify-center items-center"><i data-lucide="DoorOpen"></i>Entrar</button>
