@@ -7,8 +7,11 @@
     <title>Register</title>
 </head>
 <body  class="bg-cover h-screen w-screen"  style="background-image: url('../src/assets/rm218batch4-ning-24.jpg') " >
-    <main class=" h-screen w-screen  flex justify-center items-center">
-
+    <main class=" h-screen w-screen  flex flex-col justify-center items-center">
+          <div class="mb-10 flex gap-2 items-center justify-center"> 
+           <i data-lucide="list-check" class="w-10 h-10 text-white"></i>   
+           <h1 class="font-aclonica text-4xl text-white">TaskManager</h1>
+        </div>
                 
         <div class="flex flex-col  justify- rounded-3xl p-10 h-fit w-[400px] border border-white/20 text-white  bg-black/20 backdrop-blur-md shadow-lg gap-10 "  >
             
@@ -16,11 +19,10 @@
                 <span class="text-sm"><a href="./pages/register.html">
 Already have an account? Log in!</a></span>
                 <h1 class="text-2xl font-bold">
-                    Register
+                Start <span class="text-blue-300 animate-pulse">organizing</span> your tasks
                 </h1>
                 <p class="p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam temporibus facere ea eveniet, 
-                    
+Get started with TaskManager today.                    
                 </p>
             </div>
             <div> 
@@ -41,11 +43,11 @@ Already have an account? Log in!</a></span>
                         <i data-lucide="eye"></i>
                     </div>
                     <div class="flex justify-center items-center p-3 border h-[40px] gap-3 w-full rounded-[20px]">
-                         <i data-lucide="key-round" class="w-5 h-5 text-gray"></i>
+                         <i data-lucide="lock-keyhole-open" class="w-5 h-5 text-gray"></i>
                         <input type="password" id="password" placeholder="Confirm your password" class="w-full outline-none">
                         <i data-lucide="eye"></i>
                     </div>
-                   <button class="bg-white text-black w-full h-[50px] gap-2 rounded-[20px] opacity-100 flex justify-center items-center mt-2">
+                   <button class="bg-white text-black w-full h-[50px] gap-2 rounded-[20px] opacity-100 flex justify-center items-center mt-2 shadow-inner active:scale-95 active:shadow-none transition-all hover:-translate-y-1 ">
                       <i data-lucide="DoorOpen"></i>
                         Sign up</button>
 
