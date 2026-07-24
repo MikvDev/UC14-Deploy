@@ -4,40 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/main.css">
-    <title>Login</title>
+    <title>Task manager - Login</title>
 </head>
 <body  class="bg-cover h-screen w-screen"  style="background-image: url('./src/assets/rm218batch4-ning-24.jpg') " >
-    <main class=" h-screen w-screen  flex justify-center items-center">
-
+    <main class=" h-screen w-screen  flex flex-col justify-center items-center">
+        <div class="mb-10 flex gap-2 items-center justify-center"> 
+           <i data-lucide="list-check" class="w-10 h-10 text-white"></i>   
+           <h1 class="font-aclonica text-4xl text-white">TaskManager</h1>
+        </div>
         
         <div class="flex flex-col  justify-between   rounded-3xl p-10 h-fit w-[400px] border border-white/20 text-white  bg-black/30 backdrop-blur-md shadow-lg gap-10 "  >
-            <div class="text-center flex flex-col gap-3"> 
-                <a href="/pages/register.html">Não tem uma conta ainda? Se cadastre</a>
+            
+            <div class="text-center flex justify-center items-center flex-col gap-3"> 
+                <a href="/pages/register.html" class="text-sm">Don't have an account yet? Sign up.</a>
+                
                 <h1 class="text-2xl font-medium">
                     Sign 
                 </h1>
                 <p class="p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam temporibus facere ea eveniet, 
-                    
+Log in to your account to continue.                    
                 </p>
             </div>
             <div> 
-                <form class="flex flex-col justify-center items-center text-center gap-3">
+                <form  id="login-form"  class="flex flex-col justify-center items-center text-center gap-3">
                     <div class="flex justify-center items-center p-3 border h-[40px] gap-3 w-full rounded-[20px]">
                         <i data-lucide="mail" class="w-5 h-5"></i>
-                        <input type="email" id="email" autocomplete="email"  required   placeholder="Email" class="w-full">
+                        <input type="email" id="email" autocomplete="email"  required   placeholder="Email" class="w-full outline-none bg-trasparent">
 
                     </div>
                     <div class="flex justify-center items-center p-3 border h-[40px] gap-3 w-full rounded-[20px]">
                          <i data-lucide="lock" class="w-5 h-5 text-gray"></i>
-                        <input type="password" id="email" required   placeholder="Password" class="w-full">
-                        <i data-lucide="eye"></i>
+                        <input type="password" id="password" required   placeholder="Password" class="w-full outline-none">
+                       
+
+                            <i id="eye-btn"  data-lucide="eye"></i>
+                       
                     </div>
                     <a href="">Forgot your password?</a>
-                    <div class="error-message hidden text-red-300 ">
+                    <div id="error-message" class="hidden text-red-300 ">
 
                     </div>
-                   <button class="bg-white text-black w-full h-[50px] gap-2 rounded-[20px] opacity-100 flex justify-center items-center"><i data-lucide="DoorOpen"></i>Entrar</button>
+                   <button    class="bg-white text-black w-full h-[50px] gap-2 rounded-[20px] opacity-100 flex justify-center items-center"><i data-lucide="door-open"></i>Login</button>
                     
                 </form>
             </div>
@@ -45,8 +52,10 @@
         </div>
             
     </main>
-<script src="https://unpkg.com/lucide@latest"></script><script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
     lucide.createIcons();
   </script>
+  <script type="module" src="./scripts/login.ts"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import "tailwindcss";
 
 @font-face {
@@ -6,6 +7,10 @@
   src: url('../assets/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('opentype');
   font-weight: 400;
   font-style: normal;
+}
+
+.font-aclonica {
+  font-family: 'Aclonica', sans-serif;
 }
 
 /* 2. Registrar a versão Medium (opcional para botões) */
